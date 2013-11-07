@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+      <TextView 
+          android:id="@+id/issue_tracker"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#286A9A"
+            android:paddingLeft="0dp"
+      		android:textSize="11dip" />
+      
+        <TextView
+            android:id="@+id/issue_no"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/issue_tracker"
+            android:textStyle="bold"
+            android:textSize="11dip" />
+
+        <TextView
+            android:id="@+id/issue_assignee"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/issue_no"
+			android:textStyle="bold"
+            android:textSize="11dip" />
+
+        <TextView
+            android:id="@+id/issue_priority"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/issue_assignee"
+            android:textStyle="bold"
+            android:textColor="#B22132"
+            android:textSize="11dip" />
+
+        <TextView
+            android:id="@+id/issue_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/issue_priority"
+            android:textStyle="bold"
+            android:textSize="11dip" />
+
+        <TextView
+            android:id="@+id/issue_subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/issue_priority"
+            android:paddingLeft="0dp"
+            android:paddingTop="3dp"
+            android:textSize="13dip" />
+        
+</RelativeLayout>

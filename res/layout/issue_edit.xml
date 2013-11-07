@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+    
+    <LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+	
+    <CheckBox 
+        android:id="@+id/check_parentId"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"		
+		android:text="Parent"/>
+    		
+    <TextView
+        android:id="@+id/txt_Subject"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Subject:"
+		android:textSize="10dip"/>
+	
+	<EditText
+        android:id="@+id/edit_Subject"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="top|left"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:scrollHorizontally="false"
+        android:textSize="12dp" />
+        <!-- android:layout_below="@+id/txt_Subject" -->
+
+    <TextView
+        android:id="@+id/txt_Tracker"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Tracker:"
+		android:textSize="10dip" />
+		<!-- android:layout_below="@id/edit_Subject" -->
+		
+	
+	<Spinner
+        android:id="@+id/spin_Tracker"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:paddingTop="1dp"
+        android:layout_alignParentLeft="true" />
+        <!-- android:layout_below="@+id/txt_Tracker" -->
+	    
+	<TextView
+        android:id="@+id/txt_Status"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Status:"
+		android:textSize="10dip"/>
+		<!-- android:layout_below="@id/spin_Tracker" -->
+		
+	
+	<Spinner
+        android:id="@+id/spin_Status"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:paddingTop="1dp"
+        android:layout_alignParentLeft="true" />
+        <!-- android:layout_below="@+id/txt_Status" -->
+	
+	<TextView
+        android:id="@+id/txt_Priority"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Priority:"		
+		android:textSize="10dip"/>
+	    <!-- android:layout_below="@id/spin_Status" -->
+	
+	<Spinner
+        android:id="@+id/spin_Priority"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:paddingTop="1dp"
+        android:layout_alignParentLeft="true" />
+        <!-- android:layout_below="@+id/txt_Priority" -->
+	
+	<TextView 
+	    android:id="@+id/txt_StartDate"
+	    android:text="Start date:"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="10dp"
+	    android:padding="5dp"
+	    android:textStyle="bold" />
+	    <!-- android:layout_below="@id/spin_Priority" -->
+	
+			<LinearLayout android:id="@+id/startDateLayout"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+				android:layout_height="50dp"
+				android:padding="6dp"
+				android:orientation="horizontal">
+				<TextView
+				    android:id="@+id/txt_StartDateValue"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+					android:text="Empty" 
+					android:textSize="20dp"/>
+				<Button
+				    android:id="@+id/btn_StartDateChange"
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:layout_weight="1"
+					android:text="Change" />
+				<TextView 
+				    android:layout_width="0dp"
+				    android:layout_height="40dp"
+					android:layout_weight="1"
+					android:textSize="12dp" />
+			</LinearLayout>
+		<TextView 
+		    android:id="@+id/txt_DueDate"
+		    android:text="Due date:"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="10dp"
+		    android:padding="5dp"
+		    android:textStyle="bold" />
+			<LinearLayout android:id="@+id/dueDateLayout"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+				android:layout_height="50dp"
+				android:padding="6dp"
+				android:orientation="horizontal">
+				<TextView
+				    android:id="@+id/txt_DueDateValue"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+					android:text="Empty" 
+					android:textSize="20dp"/>
+				<Button
+				    android:id="@+id/btn_DueDateChange"
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:layout_weight="1"
+					android:text="Change" />
+				<TextView 
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+			</LinearLayout>
+		
+	
+	
+	<TextView
+        android:id="@+id/txt_Assignee"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Assigned to:"		
+		android:textSize="10dip"/>
+		<!--  android:layout_below="@id/date_DueDate" -->
+	
+	<Spinner
+        android:id="@+id/spin_Assignee"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:paddingTop="1dp"
+        android:layout_alignParentLeft="true" />
+        <!-- android:layout_below="@+id/txt_Assignee" -->
+	
+	<TextView
+        android:id="@+id/txt_Version"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Version:"		
+		android:textSize="10dip"/>
+		<!-- android:layout_below="@id/spin_Assignee" -->
+	
+	<Spinner
+        android:id="@+id/spin_Version"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:paddingTop="1dp"
+        android:layout_alignParentLeft="true" />
+        <!-- android:layout_below="@+id/txt_Version" -->
+	
+	<TextView
+        android:id="@+id/txt_EstimatedTime"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Estimated time (in hours):"		
+		android:textSize="10dip"/>
+	    <!-- android:layout_below="@id/spin_Version" -->
+	    
+	<EditText
+        android:id="@+id/edit_EstimatedTime"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:inputType="numberDecimal"
+        android:textSize="10dp" />
+		<!-- android:layout_below="@+id/txt_EstimatedTime" -->
+		
+	<TextView
+        android:id="@+id/txt_PercentDone"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="% Done:"		
+		android:textSize="10dip"/>
+     
+	<RelativeLayout android:id="@+id/seekbarLayout"  
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" > 	
+	    <SeekBar 
+	    	android:id="@+id/seekbar_PercentDone"
+	    	android:layout_width="250dp"
+	    	android:layout_height="wrap_content"
+	    	android:padding="5dp"
+	    	android:progress="0" />
+	    <TextView
+	        android:id="@+id/txt_Progress"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:hint="%"
+	    	android:layout_toRightOf="@+id/seekbar_PercentDone"	    	
+	    	android:textSize="12dip" />
+     </RelativeLayout>
+
+    
+	<TextView
+        android:id="@+id/txt_Description"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Description:"		
+		android:textSize="10dip"/>
+     <EditText
+        android:id="@+id/edit_Description"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:gravity="top|left"
+        android:textSize="12dp" />
+	
+     <TextView
+        android:id="@+id/txt_Notes"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:padding="5dp"
+		android:text="Notes:"		
+		android:textSize="10dip"/>	    
+	    
+	<EditText
+        android:id="@+id/edit_Notes"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:gravity="top|left"
+        android:textSize="12dp" />
+	
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>
